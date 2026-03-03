@@ -10,7 +10,7 @@ export function Hero() {
     <section className="hero">
       <div className="hero-bg">
         <Image
-          src="/1.jpeg"
+          src="/home/bg.jpg"
           alt="Modern Interior"
           fill
           className="hero-image"
