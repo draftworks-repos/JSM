@@ -76,16 +76,16 @@
 }
 
 /* Aspect Ratios for Image Wrappers */
-.aspect-16-9 {
-  aspect-ratio: 16 / 9;
+.aspect-16-10 {
+  aspect-ratio: 16 / 10;
 }
 
 .aspect-1-1 {
   aspect-ratio: 1 / 1;
 }
 
-.aspect-9-16 {
-  aspect-ratio: 9 / 16;
+.aspect-10-16 {
+  aspect-ratio: 10 / 16;
 }
 
 .gallery-item img {

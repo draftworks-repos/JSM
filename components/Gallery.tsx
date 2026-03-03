@@ -9,76 +9,40 @@ import "./Gallery.css";
 const INITIAL_IMAGES_COUNT = 9;
 
 const ALL_IMAGES = [
-  {
-    id: 1,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/16050.webp",
-    aspect: "aspect-16-9",
-  },
-  {
-    id: 2,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/19451.webp",
-    aspect: "aspect-1-1",
-  },
-  {
-    id: 3,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/WhatsApp-Image-2025-02-28-at-2.28.13-PM.webp",
-    aspect: "aspect-9-16",
-  },
-  {
-    id: 4,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/54339.webp",
-    aspect: "aspect-16-9",
-  },
-  {
-    id: 5,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/16050.webp",
-    aspect: "aspect-9-16",
-  }, // Reusing varying aspects
-  {
-    id: 6,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/WhatsApp-Image-2025-02-28-at-2.28.13-PM.webp",
-    aspect: "aspect-1-1",
-  },
-  {
-    id: 7,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/19451.webp",
-    aspect: "aspect-16-9",
-  },
-  {
-    id: 8,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/54339.webp",
-    aspect: "aspect-9-16",
-  },
-  {
-    id: 9,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/16050.webp",
-    aspect: "aspect-1-1",
-  },
-  {
-    id: 10,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/19451.webp",
-    aspect: "aspect-1-1",
-  },
-  {
-    id: 11,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/WhatsApp-Image-2025-02-28-at-2.28.13-PM.webp",
-    aspect: "aspect-16-9",
-  },
-  {
-    id: 12,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/54339.webp",
-    aspect: "aspect-9-16",
-  },
-  {
-    id: 13,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/16050.webp",
-    aspect: "aspect-16-9",
-  },
-  {
-    id: 14,
-    src: "https://rrsquare.in/wp-content/uploads/2026/01/19451.webp",
-    aspect: "aspect-1-1",
-  },
+  { id: 1, src: "/1.jpeg", aspect: "aspect-10-16" },
+  { id: 2, src: "/2.jpeg", aspect: "aspect-10-16" },
+  { id: 3, src: "/3.jpeg", aspect: "aspect-10-16" },
+  { id: 4, src: "/4.jpeg", aspect: "aspect-10-16" },
+
+  { id: 5, src: "/5.jpeg", aspect: "aspect-16-10" },
+  { id: 6, src: "/6.jpeg", aspect: "aspect-16-10" },
+  { id: 7, src: "/7.jpeg", aspect: "aspect-16-10" },
+  { id: 8, src: "/8.jpeg", aspect: "aspect-16-10" },
+  { id: 9, src: "/9.jpeg", aspect: "aspect-16-10" },
+
+  { id: 10, src: "/10.jpeg", aspect: "aspect-10-16" },
+  { id: 11, src: "/11.jpeg", aspect: "aspect-10-16" },
+
+  { id: 12, src: "/12.jpeg", aspect: "aspect-16-10" },
+
+  { id: 13, src: "/13.jpeg", aspect: "aspect-10-16" },
+  { id: 14, src: "/14.jpeg", aspect: "aspect-10-16" },
+  { id: 15, src: "/15.jpeg", aspect: "aspect-10-16" },
+  { id: 16, src: "/16.jpeg", aspect: "aspect-10-16" },
+
+  { id: 17, src: "/17.jpeg", aspect: "aspect-16-10" },
+  { id: 18, src: "/18.jpeg", aspect: "aspect-16-10" },
+
+  { id: 19, src: "/19.jpeg", aspect: "aspect-10-16" },
+  { id: 20, src: "/20.jpeg", aspect: "aspect-16-10" },
+
+  { id: 21, src: "/21.jpeg", aspect: "aspect-10-16" },
+  { id: 22, src: "/22.jpeg", aspect: "aspect-16-10" },
+
+  { id: 23, src: "/23.jpeg", aspect: "aspect-10-16" },
+  { id: 24, src: "/24.jpeg", aspect: "aspect-10-16" },
+
+  { id: 25, src: "/25.jpeg", aspect: "aspect-16-10" },
 ];
 
 export function Gallery() {
@@ -138,7 +102,6 @@ export function Gallery() {
                   src={img.src}
                   alt={`Gallery Image ${img.id}`}
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="gallery-img"
                   referrerPolicy="no-referrer"
                   data-lightbox
