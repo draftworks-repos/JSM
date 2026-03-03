@@ -10,10 +10,10 @@ export function Hero() {
     <section className="hero">
       <div className="hero-bg">
         <Image
-          src="https://rrsquare.in/wp-content/uploads/2026/01/54339.webp"
+          src="/1.jpeg"
           alt="Modern Interior"
           fill
-          className="object-cover"
+          className="hero-image"
           priority
           referrerPolicy="no-referrer"
         />
