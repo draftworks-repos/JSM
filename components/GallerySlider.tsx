@@ -12,11 +12,11 @@ export function GallerySlider() {
 
   const projects = [
     {
-      src: "/12.JPEG",
+      src: "/12.jpeg",
       title: "Luxury Wall Interior",
     },
     {
-      src: "/6.JPEG",
+      src: "/6.jpeg",
       title: "Corner Wood Sofa",
     },
     {
