@@ -12,31 +12,34 @@ export function GallerySlider() {
 
   const projects = [
     {
-      src: "https://rrsquare.in/wp-content/uploads/2026/01/16050.webp",
-      title: "Luxury Teak Living Room",
+      src: "/12.JPEG",
+      title: "Luxury Wall Interior",
     },
     {
-      src: "https://rrsquare.in/wp-content/uploads/2026/01/22317.webp",
-      title: "Modern Kitchen Woodwork",
+      src: "/6.JPEG",
+      title: "Corner Wood Sofa",
     },
     {
-      src: "https://rrsquare.in/wp-content/uploads/2026/01/30527.webp",
-      title: "Bespoke Dining Interior",
+      src: "/20.jpeg",
+      title: "Modern Wood Cabin",
     },
     {
-      src: "https://rrsquare.in/wp-content/uploads/2026/01/54339.webp",
-      title: "Premium Office Furniture",
+      src: "/9.jpeg",
+      title: "Modern Kitchen Interior",
     },
     {
-      src: "https://rrsquare.in/wp-content/uploads/2026/01/WhatsApp-Image-2025-02-28-at-2.28.13-PM.webp",
-      title: "Sacred Temple Design",
+      src: "/5.jpeg",
+      title: "Kitchen Interior Detail",
     },
     {
-      src: "https://rrsquare.in/wp-content/uploads/2026/01/19451.webp",
-      title: "Custom Wooden Doors",
+      src: "/24.jpeg",
+      title: "Modern Home Furniture",
+    },
+    {
+      src: "/18.jpeg",
+      title: "Modern Wood Cabinet",
     },
   ];
-
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % projects.length);
   };
