@@ -137,7 +137,7 @@ export function WhyUs() {
             className="feature-image-wrapper"
           >
             <Image
-              src="https://rrsquare.in/wp-content/uploads/2026/01/16050.webp"
+              src="/4.jpeg"
               alt="Feature Interior"
               fill
               className="feature-image"
@@ -165,7 +165,7 @@ export function WhyUs() {
           >
             <div className="floating-image-wrapper">
               <Image
-                src="https://rrsquare.in/wp-content/uploads/2026/01/Temple-Plywood-Types-Thickness-Uses-Buying-Guide-1024x683.webp"
+                src="/23.jpeg"
                 alt="Floating Detail"
                 fill
                 className="floating-image"
