@@ -15,7 +15,7 @@ export function Services() {
       category: "Craftsmanship",
       description:
         "Statement wooden doors handcrafted from premium teak, sagon, and hardwoods — designed to elevate luxury residences and heritage estates.",
-      image: "https://rrsquare.in/wp-content/uploads/2026/01/19451.webp",
+      image: "/1.jpeg",
     },
     {
       id: "B",
@@ -24,7 +24,7 @@ export function Services() {
       category: "Interiors",
       description:
         "Complete wooden interiors including living spaces, bedrooms, kitchens, wardrobes, and architectural elements curated with premium materials.",
-      image: "https://rrsquare.in/wp-content/uploads/2026/01/16050.webp",
+      image: "/15.jpeg",
     },
     {
       id: "C",
@@ -33,8 +33,7 @@ export function Services() {
       category: "Sacred",
       description:
         "Custom wooden mandirs crafted with spiritual sensitivity, traditional detailing, and superior-grade wood for timeless devotion spaces.",
-      image:
-        "https://rrsquare.in/wp-content/uploads/2026/01/WhatsApp-Image-2025-02-28-at-2.28.13-PM.webp",
+      image: "/23.jpeg",
     },
   ];
 
