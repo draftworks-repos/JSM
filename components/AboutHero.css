@@ -11,7 +11,7 @@
 .about-hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("/12.jpeg");
+  background-image: url("/about/bg.jpg");
   background-size: cover;
   background-position: center;
   z-index: 1;

@@ -20,7 +20,7 @@ export function AboutHero() {
             <span className="accent">Since 1994.</span>
           </h1>
           <p className="about-hero-subtitle">
-            The story of JANTA SAW MILL (JSM) — where tradition meets modern
+            The story of JANTA SAW MILL (JSM) - where tradition meets modern
             architectural precision.
           </p>
         </motion.div>
