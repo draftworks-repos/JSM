@@ -1,0 +1,97 @@
+.about-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("https://rrsquare.in/wp-content/uploads/2026/01/54339.webp");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    transparent 100%
+  );
+  z-index: 2;
+}
+
+.about-hero .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero-content {
+  max-width: 800px;
+}
+
+.about-hero .badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: rgba(196, 164, 132, 0.2);
+  color: #c4a484;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(196, 164, 132, 0.3);
+}
+
+.about-hero-title {
+  font-family: var(--font-tight), sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.about-hero-title .accent {
+  color: #c4a484;
+}
+
+.about-hero-subtitle {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 550px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .about-hero .container {
+    padding: 0 2rem;
+  }
+
+  .about-hero {
+    height: 60vh;
+  }
+}
+@media (max-width: 768px) {
+  .about-hero .container {
+    padding: 0 1rem;
+  }
+  .about-hero {
+    padding-bottom: 3rem;
+  }
+}
