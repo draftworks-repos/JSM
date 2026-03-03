@@ -1,0 +1,148 @@
+/* Hero Section Styles - Pure CSS */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end; /* Position at bottom */
+  overflow: hidden;
+  background-color: #000;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-image {
+  object-fit: cover;
+  object-position: 0 30%;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    transparent 100%
+  );
+  z-index: 10;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px 80px; /* Left padding and bottom padding */
+  position: relative;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left align */
+  text-align: left; /* Left align */
+}
+
+.hero-text-container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-title {
+  font-family: var(--font-tight), sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Slightly smaller, cleaner */
+  font-weight: 400; /* Lighter weight */
+  color: #ffffff;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+  text-transform: none; /* Remove uppercase for cleaner look */
+}
+
+.hero-title-accent {
+  color: #c4a484;
+  font-style: normal; /* Remove italic */
+  font-weight: 500;
+}
+
+.hero-description {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 500px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-weight: 300;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.btn-hero-primary {
+  padding: 10px 10px 10px 30px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.arrow-circle {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-hero-primary:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.btn-hero-primary:hover .arrow-circle {
+  background-color: #c4a484;
+  color: #fff;
+}
+
+.btn-arrow {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center;
+}
+
+.btn-hero-primary:hover .btn-arrow {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+  .hero-content {
+    padding: 0 2rem 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 0 1rem 4rem;
+  }
+}
