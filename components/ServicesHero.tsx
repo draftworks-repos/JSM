@@ -16,11 +16,12 @@ export function ServicesHero() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <h1 className="services-hero-title">
-            Our <span className="accent">Services.</span>
+            Interior & Furniture <br />
+            <span className="accent">Wood Services.</span>
           </h1>
           <p className="services-hero-subtitle">
-            Comprehensive interior and architectural woodwork solutions tailored
-            to your unique requirements.
+            From custom furniture to interior woodwork, we deliver design,
+            fabrication, and installation with lasting quality.
           </p>
         </motion.div>
       </div>
