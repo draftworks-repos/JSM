@@ -12,39 +12,38 @@ export function Portfolio() {
       id: 1,
       title: "Modern Living Space",
       category: "Residential",
-      image: "https://rrsquare.in/wp-content/uploads/2026/01/16050.webp",
+      image: "/8.jpeg",
       featured: true,
     },
     {
       id: 2,
       title: "Contemporary Kitchen",
       category: "Residential",
-      image: "https://rrsquare.in/wp-content/uploads/2026/01/22317.webp",
+      image: "/9.jpeg",
     },
     {
       id: 3,
       title: "Minimalist Dining",
       category: "Residential",
-      image: "https://rrsquare.in/wp-content/uploads/2026/01/30527.webp",
+      image: "/3.jpeg",
     },
     {
       id: 4,
       title: "Executive Office",
       category: "Commercial",
-      image: "https://rrsquare.in/wp-content/uploads/2026/01/54339.webp",
+      image: "/20.jpeg",
     },
     {
       id: 5,
       title: "Elegant Bedroom",
       category: "Residential",
-      image:
-        "https://rrsquare.in/wp-content/uploads/2026/01/WhatsApp-Image-2025-02-28-at-2.28.13-PM.webp",
+      image: "/17.jpeg",
     },
     {
       id: 6,
       title: "Corporate Workspace",
       category: "Commercial",
-      image: "https://rrsquare.in/wp-content/uploads/2026/01/19451.webp",
+      image: "/16.jpeg",
     },
   ];
 
