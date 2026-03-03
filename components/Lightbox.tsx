@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowRight, ArrowLeft, X } from "lucide-react";
-import "./lightbox.css";
+import "./Lightbox.css";
 
 export default function Lightbox() {
   const [open, setOpen] = useState(false);
