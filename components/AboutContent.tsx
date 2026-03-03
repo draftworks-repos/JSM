@@ -95,7 +95,7 @@ export function AboutContent() {
           >
             <div className="image-frame">
               <Image
-                src="https://rrsquare.in/wp-content/uploads/2026/01/54339.webp"
+                src="/4.jpeg"
                 alt="JSM Workshop"
                 fill
                 className="about-img"
