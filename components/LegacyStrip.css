@@ -1,0 +1,134 @@
+.legacy-strip-wrapper {
+  padding: 60px 0;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.legacy-strip-wrapper .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.legacy-marquee-container {
+  position: relative;
+  padding: 40px;
+  border-radius: 24px;
+  background-color: #fdfaf6;
+  border: 1px solid #f5f2ed;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+}
+
+.legacy-marquee-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px; /* adjust fade width */
+  height: 100%;
+  background: linear-gradient(to right, #fdfaf6, rgba(253, 250, 246, 0));
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* RIGHT fade */
+.legacy-marquee-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px; /* adjust fade width */
+  height: 100%;
+  background: linear-gradient(to left, #fdfaf6, rgba(253, 250, 246, 0));
+  pointer-events: none;
+  z-index: 2;
+}
+
+.legacy-marquee {
+  display: flex;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 40s linear infinite;
+  gap: 40px;
+  align-items: center;
+}
+
+.marquee-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.marquee-icon {
+  color: #c4a484;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.marquee-text {
+  font-family: var(--font-sans), sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.15rem);
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.marquee-divider {
+  height: 24px;
+  width: 1px;
+  background-color: rgba(196, 164, 132, 0.2);
+  margin-left: 16px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1024px) {
+  .legacy-strip-wrapper .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .legacy-strip-wrapper .container {
+    padding: 0 1rem;
+  }
+  .legacy-strip-wrapper {
+    padding: 40px 0;
+  }
+
+  .legacy-marquee-container {
+    padding: 30px 20px;
+  }
+
+  .marquee-content {
+    gap: 60px;
+    animation-duration: 25s;
+  }
+
+  .marquee-item {
+    gap: 16px;
+  }
+
+  .marquee-divider {
+    margin-left: 60px;
+  }
+}
