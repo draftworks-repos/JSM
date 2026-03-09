@@ -12,6 +12,14 @@ export function GallerySlider() {
 
   const projects = [
     {
+      src: "/door-2.jpg",
+      title: "",
+    },
+    {
+      src: "/door-3.jpg",
+      title: "",
+    },
+    {
       src: "/12.jpeg",
       title: "Luxury Wall Interior",
     },
@@ -20,23 +28,15 @@ export function GallerySlider() {
       title: "Corner Wood Sofa",
     },
     {
-      src: "/20.jpeg",
-      title: "Modern Wood Cabin",
+      src: "/8.jpeg",
+      title: "Corner Cabin",
     },
     {
-      src: "/9.jpeg",
-      title: "Modern Kitchen Interior",
-    },
-    {
-      src: "/5.jpeg",
-      title: "Kitchen Interior Detail",
-    },
-    {
-      src: "/24.jpeg",
+      src: "/gallery-3.jpg",
       title: "Modern Home Furniture",
     },
     {
-      src: "/18.jpeg",
+      src: "/gallery-4.jpg",
       title: "Modern Wood Cabinet",
     },
   ];
