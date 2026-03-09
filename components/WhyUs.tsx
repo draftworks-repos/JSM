@@ -137,7 +137,7 @@ export function WhyUs() {
             className="feature-image-wrapper"
           >
             <Image
-              src="/4.jpeg"
+              src="/whyus.jpeg"
               alt="Feature Interior"
               fill
               className="feature-image"
@@ -165,7 +165,7 @@ export function WhyUs() {
           >
             <div className="floating-image-wrapper">
               <Image
-                src="/23.jpeg"
+                src="/mandir-2.jpg"
                 alt="Floating Detail"
                 fill
                 className="floating-image"
