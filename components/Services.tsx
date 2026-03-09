@@ -15,7 +15,7 @@ export function Services() {
       category: "Craftsmanship",
       description:
         "Statement wooden doors handcrafted from premium teak, sagon, and hardwoods — designed to elevate luxury residences and heritage estates.",
-      image: "/1.jpeg",
+      image: "/door.jpeg",
     },
     {
       id: "B",
@@ -24,7 +24,7 @@ export function Services() {
       category: "Interiors",
       description:
         "Complete wooden interiors including living spaces, bedrooms, kitchens, wardrobes, and architectural elements curated with premium materials.",
-      image: "/15.jpeg",
+      image: "/interior.jpeg",
     },
     {
       id: "C",
@@ -33,7 +33,7 @@ export function Services() {
       category: "Sacred",
       description:
         "Custom wooden mandirs crafted with spiritual sensitivity, traditional detailing, and superior-grade wood for timeless devotion spaces.",
-      image: "/23.jpeg",
+      image: "/mandir.jpeg",
     },
   ];
 
