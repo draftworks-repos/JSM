@@ -12,14 +12,14 @@ export function Portfolio() {
       id: 1,
       title: "Modern Living Space",
       category: "Residential",
-      image: "/8.jpeg",
+      image: "/portfolio-1.jpeg",
       featured: true,
     },
     {
       id: 2,
       title: "Contemporary Kitchen",
       category: "Residential",
-      image: "/9.jpeg",
+      image: "/portfolio-5.jpeg",
     },
     {
       id: 3,
@@ -31,13 +31,13 @@ export function Portfolio() {
       id: 4,
       title: "Executive Office",
       category: "Commercial",
-      image: "/20.jpeg",
+      image: "/portfolio-4.jpeg",
     },
     {
       id: 5,
       title: "Elegant Bedroom",
       category: "Residential",
-      image: "/17.jpeg",
+      image: "/portfolio-2.jpg",
     },
     {
       id: 6,
