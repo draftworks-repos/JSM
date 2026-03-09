@@ -165,7 +165,7 @@ export function WhyUs() {
           >
             <div className="floating-image-wrapper">
               <Image
-                src="/mandir-2.jpg"
+                src="/mandir-2.jpeg"
                 alt="Floating Detail"
                 fill
                 className="floating-image"
