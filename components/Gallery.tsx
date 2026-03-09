@@ -9,40 +9,84 @@ import "./Gallery.css";
 const INITIAL_IMAGES_COUNT = 9;
 
 const ALL_IMAGES = [
-  { id: 1, src: "/1.jpeg", aspect: "aspect-10-16" },
-  { id: 2, src: "/2.jpeg", aspect: "aspect-10-16" },
-  { id: 3, src: "/3.jpeg", aspect: "aspect-10-16" },
-  { id: 4, src: "/4.jpeg", aspect: "aspect-10-16" },
-
-  { id: 5, src: "/5.jpeg", aspect: "aspect-16-10" },
-  { id: 6, src: "/6.jpeg", aspect: "aspect-16-10" },
-  { id: 7, src: "/7.jpeg", aspect: "aspect-16-10" },
-  { id: 8, src: "/8.jpeg", aspect: "aspect-16-10" },
-  { id: 9, src: "/9.jpeg", aspect: "aspect-16-10" },
-
-  { id: 10, src: "/10.jpeg", aspect: "aspect-10-16" },
-  { id: 11, src: "/11.jpeg", aspect: "aspect-10-16" },
-
-  { id: 12, src: "/12.jpeg", aspect: "aspect-16-10" },
-
-  { id: 13, src: "/13.jpeg", aspect: "aspect-10-16" },
-  { id: 14, src: "/14.jpeg", aspect: "aspect-10-16" },
-  { id: 15, src: "/15.jpeg", aspect: "aspect-10-16" },
-  { id: 16, src: "/16.jpeg", aspect: "aspect-10-16" },
-
-  { id: 17, src: "/17.jpeg", aspect: "aspect-16-10" },
-  { id: 18, src: "/18.jpeg", aspect: "aspect-16-10" },
-
-  { id: 19, src: "/19.jpeg", aspect: "aspect-10-16" },
-  { id: 20, src: "/20.jpeg", aspect: "aspect-16-10" },
-
-  { id: 21, src: "/21.jpeg", aspect: "aspect-10-16" },
-  { id: 22, src: "/22.jpeg", aspect: "aspect-16-10" },
-
-  { id: 23, src: "/23.jpeg", aspect: "aspect-10-16" },
-  { id: 24, src: "/24.jpeg", aspect: "aspect-10-16" },
-
-  { id: 25, src: "/25.jpeg", aspect: "aspect-16-10" },
+  { id: 1, src: "/door-6.jpeg" },
+  { id: 2, src: "/stairs-3.jpeg" },
+  { id: 3, src: "/gallery-1.jpeg" },
+  { id: 4, src: "/work-2.jpeg" },
+  { id: 5, src: "/interior.jpeg" },
+  { id: 6, src: "/2.jpeg" },
+  { id: 7, src: "/mandir.jpeg" },
+  { id: 8, src: "/stairs-4.jpeg" },
+  { id: 9, src: "/portfolio-1.jpeg" },
+  { id: 10, src: "/door-1.png" },
+  { id: 11, src: "/room-1.jpeg" },
+  { id: 12, src: "/work-3.jpeg" },
+  { id: 13, src: "/stairs-1.jpeg" },
+  { id: 14, src: "/interior-1.jpeg" },
+  { id: 15, src: "/work-1.jpeg" },
+  { id: 16, src: "/3.jpeg" },
+  { id: 17, src: "/1.jpeg" },
+  { id: 18, src: "/door-2.jpg" },
+  { id: 19, src: "/mandir-2.jpeg" },
+  { id: 20, src: "/gallery-2.jpeg" },
+  { id: 21, src: "/interior-2.jpeg" },
+  { id: 22, src: "/work-4.jpeg" },
+  { id: 23, src: "/room-2.jpeg" },
+  { id: 24, src: "/4.jpeg" },
+  { id: 25, src: "/door-3.jpg" },
+  { id: 26, src: "/stairs-2.jpeg" },
+  { id: 27, src: "/portfolio-2.jpeg" },
+  { id: 28, src: "/interior-3.jpeg" },
+  { id: 29, src: "/mandir-3.jpeg" },
+  { id: 30, src: "/5.jpeg" },
+  { id: 31, src: "/work-6.jpeg" },
+  { id: 32, src: "/door-4.jpeg" },
+  { id: 33, src: "/gallery-3.jpg" },
+  { id: 34, src: "/room-3.jpeg" },
+  { id: 35, src: "/6.jpeg" },
+  { id: 36, src: "/interior-4.jpeg" },
+  { id: 37, src: "/work-7.jpeg" },
+  { id: 38, src: "/mandir-4.jpg" },
+  { id: 39, src: "/portfolio-2.jpg" },
+  { id: 40, src: "/door-5.jpeg" },
+  { id: 41, src: "/7.jpeg" },
+  { id: 42, src: "/gallery-4.jpg" },
+  { id: 43, src: "/room-4.jpeg" },
+  { id: 44, src: "/work-8.jpeg" },
+  { id: 45, src: "/interior-5.jpeg" },
+  { id: 46, src: "/8.jpeg" },
+  { id: 47, src: "/mandir-5.jpeg" },
+  { id: 48, src: "/door-7.jpeg" },
+  { id: 49, src: "/portfolio-3.jpeg" },
+  { id: 50, src: "/work-9.jpeg" },
+  { id: 51, src: "/9.jpeg" },
+  { id: 52, src: "/gallery-5.jpeg" },
+  { id: 53, src: "/whyus.jpeg" },
+  { id: 54, src: "/work-10.jpeg" },
+  { id: 55, src: "/10.jpeg" },
+  { id: 56, src: "/portfolio-4.jpeg" },
+  { id: 57, src: "/gallery-6.jpeg" },
+  { id: 58, src: "/work-11.jpeg" },
+  { id: 59, src: "/11.jpeg" },
+  { id: 60, src: "/portfolio-5.jpeg" },
+  { id: 61, src: "/work-12.jpeg" },
+  { id: 62, src: "/12.jpeg" },
+  { id: 63, src: "/gallery-7.jpeg" },
+  { id: 64, src: "/work-13.jpeg" },
+  { id: 65, src: "/13.jpeg" },
+  { id: 66, src: "/work-14.jpeg" },
+  { id: 67, src: "/14.jpeg" },
+  { id: 68, src: "/work-15.jpeg" },
+  { id: 69, src: "/15.jpeg" },
+  { id: 70, src: "/work-16.jpeg" },
+  { id: 71, src: "/16.jpeg" },
+  { id: 72, src: "/17.jpeg" },
+  { id: 73, src: "/18.jpeg" },
+  { id: 74, src: "/19.jpeg" },
+  { id: 75, src: "/20.jpeg" },
+  { id: 76, src: "/21.jpeg" },
+  { id: 77, src: "/22.jpeg" },
+  { id: 78, src: "/23.jpeg" },
 ];
 
 export function Gallery() {
@@ -97,11 +141,12 @@ export function Gallery() {
               viewport={{ once: true, margin: "100px" }}
               transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
             >
-              <div className={`gallery-img-wrapper ${img.aspect}`}>
+              <div className={`gallery-img-wrapper`}>
                 <Image
                   src={img.src}
                   alt={`Gallery Image ${img.id}`}
-                  fill
+                  width={800}
+                  height={1200}
                   className="gallery-img"
                   referrerPolicy="no-referrer"
                   data-lightbox
