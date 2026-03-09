@@ -95,7 +95,7 @@ export function AboutContent() {
           >
             <div className="image-frame">
               <Image
-                src="/4.jpeg"
+                src="/work-9.jpeg"
                 alt="JSM Workshop"
                 fill
                 className="about-img"
