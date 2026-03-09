@@ -15,7 +15,7 @@ export function Services() {
       category: "Craftsmanship",
       description:
         "Statement wooden doors handcrafted from premium teak, sagon, and hardwoods — designed to elevate luxury residences and heritage estates.",
-      image: "/door.jpeg",
+      image: "/door-4.jpeg",
     },
     {
       id: "B",
