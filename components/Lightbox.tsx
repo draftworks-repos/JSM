@@ -7,44 +7,64 @@ import "./Lightbox.css";
 
 export default function Lightbox() {
   const [open, setOpen] = useState(false);
-  const [images, setImages] = useState<string[]>([]);
+  const [items, setItems] = useState<{ src: string; type: "image" | "video" }[]>([]);
   const [index, setIndex] = useState(0);
+
+  const isVideo = (src: string) =>
+    src.toLowerCase().endsWith(".mp4") ||
+    src.toLowerCase().endsWith(".webm") ||
+    src.toLowerCase().endsWith(".ogg");
 
   const close = useCallback(() => setOpen(false), []);
   const next = useCallback(
-    () => setIndex((prev) => (prev + 1) % images.length),
-    [images.length],
+    () => setIndex((prev) => (prev + 1) % items.length),
+    [items.length],
   );
   const prev = useCallback(
-    () => setIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1)),
-    [images.length],
+    () => setIndex((prev) => (prev === 0 ? items.length - 1 : prev - 1)),
+    [items.length],
   );
 
   // Event delegation
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      const img = target.closest("[data-lightbox]") as HTMLImageElement;
-      if (!img) return;
+      const el = target.closest("[data-lightbox]") as
+        | HTMLImageElement
+        | HTMLVideoElement;
+      if (!el) return;
 
-      const gallery = img.dataset.gallery;
+      const gallery = el.dataset.gallery;
+      const getSrc = (element: HTMLElement) =>
+        (element as HTMLImageElement | HTMLVideoElement).currentSrc ||
+        (element as HTMLImageElement | HTMLVideoElement).src ||
+        "";
 
-      // Single image mode
+      // Single item mode
       if (!gallery) {
-        setImages([img.src]);
+        const src = getSrc(el);
+        setItems([
+          { src, type: (isVideo(src) ? "video" : "image") as "image" | "video" },
+        ]);
         setIndex(0);
         setOpen(true);
         return;
       }
 
-      const galleryImages = Array.from(
+      const galleryElements = Array.from(
         document.querySelectorAll(`[data-lightbox][data-gallery="${gallery}"]`),
-      ) as HTMLImageElement[];
+      ) as (HTMLImageElement | HTMLVideoElement)[];
 
-      const sources = galleryImages.map((i) => i.src);
-      const current = sources.indexOf(img.src);
+      const sources = galleryElements.map((i) => {
+        const src = getSrc(i);
+        return {
+          src,
+          type: (isVideo(src) ? "video" : "image") as "image" | "video",
+        };
+      });
+      const current = sources.findIndex((i) => i.src === getSrc(el));
 
-      setImages(sources);
+      setItems(sources);
       setIndex(current);
       setOpen(true);
     };
@@ -78,18 +98,33 @@ export default function Lightbox() {
           transition={{ duration: 0.2 }}
           onClick={close}
         >
-          <motion.img
-            key={images[index]}
-            src={images[index]}
-            className="lightbox-image"
-            initial={{ scale: 0.95, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.95, opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            onClick={(e) => e.stopPropagation()}
-          />
+          {items[index].type === "video" ? (
+            <motion.video
+              key={items[index].src}
+              src={items[index].src}
+              className="lightbox-video"
+              controls
+              autoPlay
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              onClick={(e) => e.stopPropagation()}
+            />
+          ) : (
+            <motion.img
+              key={items[index].src}
+              src={items[index].src}
+              className="lightbox-image"
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              onClick={(e) => e.stopPropagation()}
+            />
+          )}
 
-          {images.length > 1 && (
+          {items.length > 1 && (
             <div className="lightbox-nav">
               <button
                 className="lightbox-prev"
