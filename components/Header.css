@@ -237,3 +237,12 @@
     padding: 0 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    height: 70px;
+  }
+  .header-content {
+    padding: 0 1rem;
+  }
+}
