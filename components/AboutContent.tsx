@@ -19,7 +19,7 @@ export function AboutContent() {
     },
     {
       icon: <Award size={24} />,
-      title: "30+ Years",
+      title: "40+ Years",
       desc: "Three decades of mastery in timber and woodworking.",
     },
     {
@@ -32,22 +32,6 @@ export function AboutContent() {
   return (
     <section className="about-content">
       <div className="container">
-        <div className="about-highlights">
-          {highlights.map((item, index) => (
-            <motion.div
-              key={index}
-              className="highlight-card"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-            >
-              <div className="highlight-icon">{item.icon}</div>
-              <h3 className="highlight-title">{item.title}</h3>
-              <p className="highlight-desc">{item.desc}</p>
-            </motion.div>
-          ))}
-        </div>
         <div className="about-intro">
           <motion.div
             className="intro-text"
@@ -59,7 +43,7 @@ export function AboutContent() {
             <h2 className="company-name">JANTA SAW MILL (JSM)</h2>
             <p className="lead-text">By Majid Khan</p>
             <p className="sub-points">
-              Government of India Recognised • 30+ Years of Excellence
+              Government of India Recognised • 40+ Years of Excellence
             </p>
             <p className="description-text">
               Best Luxury Timber Merchant in MP
@@ -73,7 +57,7 @@ export function AboutContent() {
                 Founded on the principles of integrity and unparalleled
                 craftsmanship, JANTA SAW MILL (JSM) has evolved into a
                 cornerstone of luxury architectural woodwork in Central India.
-                Under the stewardship of Majid Khan, we have spent over 30 years
+                Under the stewardship of Majid Khan, we have spent over 40 years
                 perfecting the art of timber selection and precision execution.
               </p>
               <p>
@@ -106,6 +90,22 @@ export function AboutContent() {
             </div>
           </motion.div>
         </div>
+        {/* <div className="about-highlights">
+          {highlights.map((item, index) => (
+            <motion.div
+              key={index}
+              className="highlight-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+            >
+              <div className="highlight-icon">{item.icon}</div>
+              <h3 className="highlight-title">{item.title}</h3>
+              <p className="highlight-desc">{item.desc}</p>
+            </motion.div>
+          ))}
+        </div> */}
       </div>
     </section>
   );
