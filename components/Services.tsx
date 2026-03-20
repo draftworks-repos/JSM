@@ -10,16 +10,25 @@ export function Services() {
   const services = [
     {
       id: "A",
-      title: "Bespoke Doors",
-      href: "/services#Bespoke",
-      category: "Craftsmanship",
+      title: "Premium Sagwan Timber",
+      href: "/services#Sacred",
+      category: "Timber",
       description:
-        "Statement wooden doors handcrafted from premium teak, sagon, and hardwoods — designed to elevate luxury residences and heritage estates.",
-      image: "/door-4.jpeg",
+        "High-quality, seasoned Sagwan (Teak) wood sourced for durability and rich grain, perfect for high-end construction and bespoke carpentry.",
+      image: "/sagwan.jpg",
     },
     {
       id: "B",
-      title: "Luxury Home Interiors",
+      title: "Wooden Doors",
+      href: "/services#Bespoke",
+      category: "Craftsmanship",
+      description:
+        "Statement wooden doors handcrafted from premium teak, sagon, and hardwoods designed to elevate luxury residences and heritage estates.",
+      image: "/door-4.jpeg",
+    },
+    {
+      id: "C",
+      title: "Luxury Wood Interiors",
       href: "/services#Interiors",
       category: "Interiors",
       description:
@@ -27,13 +36,13 @@ export function Services() {
       image: "/interior.jpeg",
     },
     {
-      id: "C",
-      title: "Mandirs & Sacred Spaces",
-      href: "/services#Sacred",
-      category: "Sacred",
+      id: "D",
+      title: "Custom Furniture",
+      href: "/services#Bespoke",
+      category: "Craftsmanship",
       description:
-        "Custom wooden mandirs crafted with spiritual sensitivity, traditional detailing, and superior-grade wood for timeless devotion spaces.",
-      image: "/mandir.jpeg",
+        "Tailor-made furniture pieces that blend ergonomic design with artisanal wood carving to reflect your personal style and functional needs.",
+      image: "/furniture.jpeg", // Suggested update to image path if applicable
     },
   ];
 
