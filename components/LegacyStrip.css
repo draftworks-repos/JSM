@@ -1,6 +1,6 @@
 .legacy-strip-wrapper {
   padding: 60px 0;
-  background-color: #fff;
+  background-color: transparent;
   position: relative;
   z-index: 10;
   overflow: hidden;
