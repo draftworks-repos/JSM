@@ -13,8 +13,10 @@ export default function Home() {
     <main>
       <Header />
       <Hero />
-      <LegacyStrip />
-      <WhyUs />
+      <div className="bg-1">
+        <LegacyStrip />
+        <WhyUs />
+      </div>
       <Services />
       <Portfolio />
       <GallerySlider />
