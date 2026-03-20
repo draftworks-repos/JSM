@@ -1,0 +1,203 @@
+.teak-story {
+  padding: 100px 0 200px;
+  background: transparent;
+  color: var(--color-text, #1a1a1a);
+  overflow: hidden;
+  position: relative;
+}
+
+.teak-story::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/work-4.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.teak-story::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-320deg, #040404, #5a2e1f);
+  opacity: 1;
+  z-index: -1;
+}
+
+.teak-story .container {
+  max-width: 1400px;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+.teak-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.teak-story .badge-wrapper {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 40px;
+}
+
+.teak-story .badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: #f5f2ed1e;
+  color: #ffe6ce;
+  border: 1px solid #c4a48484;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 999px;
+}
+
+.teak-title {
+  font-family: var(--font-tight), sans-serif;
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.teak-title span {
+  color: #c4a484;
+  font-weight: 500;
+}
+
+.teak-description {
+  font-size: 1rem;
+  color: #cbbdaf;
+  margin-bottom: 50px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 20px;
+}
+
+.feature-icon {
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  background: rgba(197, 160, 89, 0.1);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary, #c5a059);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+  background: var(--color-primary, #c5a059);
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.feature-text h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.feature-text p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #cbbdaf;
+}
+
+.teak-visual {
+  position: relative;
+  height: 650px;
+}
+
+.teak-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.teak-img {
+  object-fit: cover;
+}
+
+.teak-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, transparent 60%);
+}
+
+@media (max-width: 1200px) {
+  .teak-grid {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .teak-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .teak-visual {
+    height: 500px;
+  }
+
+  .teak-content {
+    order: 1;
+  }
+
+  .teak-visual {
+    order: 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .teak-story .container {
+    padding: 0 20px;
+  }
+
+  .teak-title {
+    font-size: 2.2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .teak-visual {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .teak-story {
+    padding-bottom: 75px;
+  }
+}
