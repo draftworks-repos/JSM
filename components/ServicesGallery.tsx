@@ -2,16 +2,50 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import "./ServicesGallery.css";
 
 export function ServicesGallery() {
   const sections = [
     {
+      id: "Sacred",
+      title: "Premium Sagwan Timber",
+      layout: "layout-3",
+      description:
+        "High-quality, seasoned Sagwan (Teak) wood sourced for durability and rich grain, perfect for high-end construction and bespoke carpentry.",
+      Gallery: [
+        "/work-1.jpeg",
+        "/work-15.jpeg",
+        "/work-9.jpeg",
+        "/work-4.jpeg",
+        "/work-11.jpeg",
+        "/work-13.jpeg",
+        "/work-8.jpeg",
+      ],
+    },
+    {
+      id: "Sacred",
+      title: "Custom Furniture",
+      layout: "layout-3",
+      description:
+        "Tailor-made furniture pieces that blend ergonomic design with artisanal wood carving to reflect your personal style and functional needs.",
+      Gallery: [
+        "/mandir.jpeg",
+        "/mandir-2.jpeg",
+        "/mandir-4.jpg",
+        "/mandir-3.jpeg",
+        "/mandir-5.jpeg",
+        "/16.jpeg",
+        "/interior-5.jpeg",
+      ],
+    },
+    {
       id: "Bespoke",
-      title: "Bespoke Doors",
+      title: "Wooden Doors",
       layout: "layout-1",
       description:
-        "Statement wooden doors handcrafted from premium teak, sagon, and hardwoods — designed to elevate luxury residences and heritage estates.",
+        "Statement wooden doors handcrafted from premium teak, sagon, and hardwoods designed to elevate luxury residences and heritage estates.",
       Gallery: [
         "/door-1.png",
         "/door-4.jpeg",
@@ -24,7 +58,7 @@ export function ServicesGallery() {
     },
     {
       id: "Interiors",
-      title: "Luxury Home Interiors",
+      title: "Luxury Wood Interiors",
       layout: "layout-2",
       description:
         "Complete wooden interiors including living spaces, bedrooms, kitchens, wardrobes, and architectural elements curated with premium materials.",
@@ -34,30 +68,14 @@ export function ServicesGallery() {
         "/gallery-1.jpeg",
         "/interior-1.jpeg",
         "/interior-3.jpeg",
-        "/interior-4.jpeg",
-        "/interior-5.jpeg",
-      ],
-    },
-    {
-      id: "Sacred",
-      title: "Mandirs & Sacred Spaces",
-      layout: "layout-3",
-      description:
-        "Custom wooden mandirs crafted with spiritual sensitivity, traditional detailing, and superior-grade wood for timeless devotion spaces.",
-      Gallery: [
-        "/mandir.jpeg",
-        "/mandir-2.jpeg",
-        "/mandir-4.jpg",
-        "/mandir-3.jpeg",
-        "/mandir-5.jpeg",
-        "/23.jpeg",
-        "/21.jpeg",
+        "/stairs-4.jpeg",
+        "/stairs-3.jpeg",
       ],
     },
   ];
 
   return (
-    <section className="services-page-gallery">
+    <section className="services-page-gallery bg-2">
       {sections.map((section, sectionIdx) => (
         <div key={section.title} className="service-section" id={section.id}>
           <div className="service-section-header">
@@ -106,6 +124,21 @@ export function ServicesGallery() {
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="service-section-cta"
+          >
+            <Link href="/contact" className="header-cta">
+              Get Started
+              <span className="arrow-circle">
+                <ArrowRight className="btn-arrow" size={14} />
+              </span>
+            </Link>
+          </motion.div>
         </div>
       ))}
     </section>
