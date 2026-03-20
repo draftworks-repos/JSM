@@ -1,6 +1,6 @@
 .why-us {
-  padding: 120px 0;
-  background-color: #fff;
+  padding: 120px 0 200px;
+  background-color: transparent;
   overflow: hidden;
 }
 
@@ -29,35 +29,150 @@
   border-radius: 999px;
 }
 
-.why-us-heading {
+.why-main-heading {
   font-family: var(--font-tight), sans-serif;
-  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 400;
-  line-height: 1.3;
-  text-align: center;
-  max-width: 1100px;
-  margin: 0 auto 80px;
+  line-height: 1.1;
   color: #1a1a1a;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: -0.03em;
 }
 
-.inline-img-wrapper {
-  display: inline-flex;
-  align-items: center;
-  vertical-align: middle;
-  margin: 0 10px;
-  /* background: #f9f9f9; */
-  border-radius: 8px;
-  padding: 4px;
-  height: 1.2em;
-  width: auto;
-  aspect-ratio: 3/2;
+.why-main-heading span {
+  color: #c4a484;
+  font-style: italic;
+  font-family: var(--font-display), serif;
+}
+
+.why-points-container {
+  max-width: 1400px;
+  margin: 0 auto 120px;
+  padding: 0 40px;
+}
+
+.why-points-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.why-point-wrapper {
+  perspective: 1000px;
+}
+
+.why-point-card {
   position: relative;
+  padding: 60px 50px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  border-radius: 40px 10px 40px 10px;
+  border: 1px solid rgba(196, 164, 132, 0.2);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
 }
 
-.inline-img {
-  object-fit: contain;
+.why-card-number {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  font-size: 140px;
+  font-weight: 900;
+  color: rgba(196, 164, 132, 0.1);
+  font-family: var(--font-tight), sans-serif;
+  z-index: -1;
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  line-height: 1;
+}
+
+.why-point-card:hover {
+  transform: translateY(-10px);
+  border-color: #c4a484;
+  box-shadow: 0 40px 80px rgba(196, 164, 132, 0.2);
+  background: #fff;
+}
+
+.why-point-card:hover .why-card-number {
+  color: rgba(196, 164, 132, 0.25);
+  transform: scale(1.15) translateX(-15px);
+}
+
+.why-point-icon-wrapper {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 30px;
+}
+
+.why-point-icon-bg {
+  position: absolute;
+  inset: 0;
+  background: #c4a4841f;
+  border-radius: 20px;
+  transform: rotate(-10deg);
+  transition: all 0.5s ease;
+}
+
+.why-point-card:hover .why-point-icon-bg {
+  transform: rotate(15deg) scale(1.1);
+  background: #c4a484;
+}
+
+.why-point-icon {
+  position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c4a484;
+  z-index: 2;
+  transition: all 0.5s ease;
+}
+
+.why-point-card:hover .why-point-icon {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.why-point-title {
+  font-family: var(--font-tight), sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  letter-spacing: -0.02em;
+}
+
+.why-point-desc {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .why-points-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-points-container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-points-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .why-point-card {
+    padding: 40px 30px;
+    border-radius: 30px 10px;
+  }
 }
 
 .feature-image-container {
@@ -121,10 +236,10 @@
 
 .floating-image-card {
   position: absolute;
-  bottom: -80px;
+  bottom: -100px;
   right: 100px;
-  width: 240px;
-  height: 240px;
+  width: 280px;
+  aspect-ratio: 4/5;
   background: #fff;
   padding: 12px;
   border-radius: 24px;
@@ -140,13 +255,15 @@
   overflow: hidden;
 }
 
-.floating-image {
+.floating-video {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 @media (max-width: 1024px) {
   .why-us {
-    padding: 50px 0 80px;
+    padding: 50px 0 150px;
   }
   .why-us .container {
     padding: 0 2rem;
@@ -164,6 +281,12 @@
 @media (max-width: 768px) {
   .why-us {
     padding: 50px 0;
+  }
+  .why-points-container {
+    margin-bottom: 3rem;
+  }
+  .feature-image-wrapper {
+    border-radius: 12px;
   }
   .why-us .container {
     padding: 0 1rem;

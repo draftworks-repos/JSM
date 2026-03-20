@@ -4,129 +4,77 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import Link from "next/link";
 import "./WhyUs.css";
-import { ArrowRight } from "lucide-react";
+import "./animatons.css";
+import { ArrowRight, Shield, Globe, Award, Zap } from "lucide-react";
 
 export function WhyUs() {
-  const inlineImages = {
-    table:
-      "https://res.cloudinary.com/dgf5ru8jw/image/upload/w_250,c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1772009688/wooden-dining-table-with-chairs-furniture-in-living-room-for-clip-art-and-element-free-png_hr5kov.webp",
-    furniture:
-      "https://res.cloudinary.com/dgf5ru8jw/image/upload/w_250,c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1772009674/compressed_2282e72e668176babc3ed7f284adaa3a_iuwkur.webp",
-    living:
-      "https://res.cloudinary.com/dgf5ru8jw/image/upload/w_250,c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1772009614/modern-wooden-living-room-furniture-set-with-wicker-accents-free-png_lmhanf.png",
-    office:
-      "https://res.cloudinary.com/dgf5ru8jw/image/upload/f_auto,q_auto,w_1200/v1772452824/modern-home-office-workspace-setup-with-desk-computer-chair_1_utxehm.png",
-    sofa: "https://res.cloudinary.com/dgf5ru8jw/image/upload/w_250,c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1772009584/high-end-wooden-sofa-furniture-on-transparent-background-free-png_ei7sb2.png",
-  };
+  const points = [
+    {
+      title: "Heritage & Trust",
+      desc: "30+ years of excellence in premium timber and luxury interior solutions.",
+      icon: <Award size={24} />,
+      delay: "delay-100",
+    },
+    {
+      title: "Sustainable Teak",
+      desc: "Ethically sourced, government-recognized grade-A teakwood built to last.",
+      icon: <Globe size={24} />,
+      delay: "delay-200",
+    },
+    {
+      title: "Master Craftsmanship",
+      desc: "Precision joinery and bespoke designs crafted by industry-leading artisans.",
+      icon: <Shield size={24} />,
+      delay: "delay-300",
+    },
+    {
+      title: "Luxury Interiors",
+      desc: "Comprehensive solutions from raw timber to finished, bespoke home environments.",
+      icon: <Zap size={24} />,
+      delay: "delay-400",
+    },
+  ];
 
   return (
     <section className="why-us">
       <div className="container">
-        <div className="badge-wrapper">
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="badge"
-          >
-            WHY US?
-          </motion.span>
-        </div>
+        <div className="why-points-container">
+          <div className="badge-wrapper">
+            <span className="badge animate-flashy-entrance">WHY US?</span>
+          </div>
 
-        <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="why-us-heading"
-        >
-          We are crafting
-          <motion.span
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              type: "spring",
-              stiffness: 500,
-              damping: 15,
-              delay: 0.6,
-            }}
-            className="inline-img-wrapper"
-          >
-            <Image
-              src={inlineImages.furniture}
-              alt="Furniture"
-              width={60}
-              height={40}
-              className="inline-img"
-            />
-          </motion.span>
-          amazing products that
-          <motion.span
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              type: "spring",
-              stiffness: 500,
-              damping: 15,
-              delay: 0.6,
-            }}
-            className="inline-img-wrapper"
-          >
-            <Image
-              src={inlineImages.sofa}
-              alt="Sofa"
-              width={60}
-              height={40}
-              className="inline-img"
-            />
-          </motion.span>
-          delight, constantly uplift the
-          <motion.span
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              type: "spring",
-              stiffness: 500,
-              damping: 15,
-              delay: 0.6,
-            }}
-            className="inline-img-wrapper"
-          >
-            <Image
-              src={inlineImages.living}
-              alt="Living Room"
-              width={60}
-              height={40}
-              className="inline-img"
-            />
-          </motion.span>
-          home, office
-          <motion.span
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              type: "spring",
-              stiffness: 500,
-              damping: 15,
-              delay: 0.6,
-            }}
-            className="inline-img-wrapper"
-          >
-            <Image
-              src={inlineImages.office}
-              alt="Living Room"
-              width={60}
-              height={40}
-              className="inline-img"
-            />
-          </motion.span>
-          environment
-        </motion.h2>
+          <h2 className="why-main-heading animate-reveal-text">
+            Legacy in Every Grain, <br />
+            <span>Luxury in Every Detail</span>
+          </h2>
+
+          <div className="why-points-grid">
+            {points.map((point, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 40, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{
+                  duration: 0.8,
+                  ease: [0.19, 1, 0.22, 1],
+                  delay: index * 0.1,
+                }}
+                className="why-point-wrapper"
+              >
+                <div className="why-point-card">
+                  <span className="why-card-number">0{index + 1}</span>
+                  <div className="why-point-icon-wrapper">
+                    <div className="why-point-icon-bg" />
+                    <div className="why-point-icon">{point.icon}</div>
+                  </div>
+                  <h3 className="why-point-title">{point.title}</h3>
+                  <p className="why-point-desc">{point.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
 
         <div className="feature-image-container">
           <motion.div
@@ -164,12 +112,13 @@ export function WhyUs() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <div className="floating-image-wrapper">
-              <Image
-                src="/mandir-2.jpeg"
-                alt="Floating Detail"
-                fill
-                className="floating-image"
-                referrerPolicy="no-referrer"
+              <video
+                src="/add/timer-add-1.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="floating-video"
                 data-lightbox
                 data-gallery="why-us"
               />
