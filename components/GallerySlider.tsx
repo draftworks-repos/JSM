@@ -13,19 +13,19 @@ export function GallerySlider() {
   const projects = [
     {
       src: "/door-2.jpg",
-      title: "",
+      title: "Modern Wooden Entrance",
     },
     {
       src: "/door-3.jpg",
-      title: "",
+      title: " Modern Wooden Open Door",
     },
     {
       src: "/12.jpeg",
       title: "Luxury Wall Interior",
     },
     {
-      src: "/6.jpeg",
-      title: "Corner Wood Sofa",
+      src: "/contact/bg.jpg",
+      title: "Luxury Bar lounge",
     },
     {
       src: "/8.jpeg",
@@ -49,7 +49,7 @@ export function GallerySlider() {
   };
 
   return (
-    <section id="gallery" className="gallery-slider-section">
+    <section id="gallery" className="gallery-slider-section bg-1">
       <div className="container">
         <div className="gallery-slider-header">
           <div className="header-left">
@@ -58,7 +58,7 @@ export function GallerySlider() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="badge"
+              className="gallery badge"
             >
               Gallery
             </motion.span>
