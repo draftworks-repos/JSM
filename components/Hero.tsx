@@ -28,9 +28,8 @@ export function Hero() {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="hero-title"
           >
-            Luxury Crafted in <span className="hero-title-accent">Wood.</span>{" "}
-            <br />
-            Legacy Built on <span className="hero-title-accent">Trust.</span>
+            Where Sagwan becomes{" "}
+            <span className="hero-title-accent">Legacy</span>
           </motion.h1>
 
           <motion.p
@@ -39,8 +38,9 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="hero-description"
           >
-            Crafting bespoke wooden interiors, statement doors, and sacred
-            spaces across Madhya Pradesh.
+            For over four decades, Janta Saw Mill has transformed the finest
+            Sagwan (Teakwood) into timeless architecture, luxury interiors, and
+            craftsmanship built to last for generations.
           </motion.p>
 
           <motion.div

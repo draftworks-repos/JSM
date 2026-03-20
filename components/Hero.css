@@ -139,6 +139,10 @@
   .hero-content {
     padding: 0 2rem 6rem;
   }
+
+  .hero-image {
+    object-position: center;
+  }
 }
 
 @media (max-width: 768px) {
