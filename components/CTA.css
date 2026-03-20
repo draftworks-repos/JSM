@@ -1,57 +1,12 @@
 .cta-section {
   padding: 120px 0;
-  background-color: #faf9f6;
+  /* background-color: #faf9f6; */
+  background-image: url("/bg/bg-7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
-}
-
-/* Background Decorative Blobs */
-.cta-blob {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  filter: blur(80px);
-  z-index: 1;
-  opacity: 0.4;
-  pointer-events: none;
-}
-
-.blob-1 {
-  background: radial-gradient(circle, #fdf4ff 0%, #e0e7ff 100%);
-  top: -100px;
-  left: -100px;
-  animation: float-slow 20s infinite alternate cubic-bezier(0.45, 0, 0.55, 1);
-}
-
-.blob-2 {
-  background: radial-gradient(circle, #fff1f2 0%, #ede9fe 100%);
-  bottom: -150px;
-  right: -50px;
-  animation: float-slow 25s infinite alternate-reverse
-    cubic-bezier(0.45, 0, 0.55, 1);
-}
-
-.blob-3 {
-  background: radial-gradient(circle, #f0fdf4 0%, #dcfce7 100%);
-  top: 50%;
-  left: 30%;
-  width: 400px;
-  height: 400px;
-  opacity: 0.2;
-  animation: float-slow 30s infinite alternate cubic-bezier(0.45, 0, 0.55, 1);
-}
-
-@keyframes float-slow {
-  0% {
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    transform: translate(30px, 40px) scale(1.1);
-  }
-  100% {
-    transform: translate(-20px, 20px) scale(0.9);
-  }
 }
 
 .cta-container {
@@ -74,8 +29,8 @@
   align-items: center;
   gap: 8px;
   padding: 10px 24px;
-  background-color: #f5f2ed;
-  color: #c4a484;
+  background-color: #f5f2ed1e;
+  color: #ffe6ce;
   border: 1px solid #c4a48484;
   border-radius: 100px;
   font-size: 13px;
@@ -87,14 +42,14 @@
 }
 
 .cta-badge-icon {
-  color: #c4a484;
+  color: #ffe6ce;
 }
 
 .cta-title {
   font-family: var(--font-tight), sans-serif;
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 400;
-  color: #1a1a1a;
+  color: #ffffff;
   line-height: 1.1;
   margin-bottom: 24px;
   max-width: 900px;
@@ -103,7 +58,7 @@
 .cta-description {
   font-family: var(--font-sans), sans-serif;
   font-size: 1.125rem;
-  color: #666;
+  color: #cbbdaf;
   max-width: 600px;
   margin-bottom: 48px;
   line-height: 1.6;
@@ -252,15 +207,11 @@
     width: 100%;
     justify-content: center;
   }
-  .cta-blob {
-    width: 300px;
-    height: 300px;
-  }
 }
 
 @media (max-width: 768px) {
   .cta-section {
-    padding: 50px 0;
+    padding: 100px 0 75px;
   }
   .cta-container {
     padding: 0 1rem;
