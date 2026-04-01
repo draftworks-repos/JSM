@@ -9,7 +9,7 @@ import "./ServicesGallery.css";
 export function ServicesGallery() {
   const sections = [
     {
-      id: "Sacred",
+      id: "Premium",
       title: "Premium Sagwan Timber",
       layout: "layout-3",
       description:
@@ -25,7 +25,7 @@ export function ServicesGallery() {
       ],
     },
     {
-      id: "Sacred",
+      id: "Custom",
       title: "Custom Furniture",
       layout: "layout-3",
       description:
@@ -41,7 +41,7 @@ export function ServicesGallery() {
       ],
     },
     {
-      id: "Bespoke",
+      id: "Wooden",
       title: "Wooden Doors",
       layout: "layout-1",
       description:
@@ -57,7 +57,7 @@ export function ServicesGallery() {
       ],
     },
     {
-      id: "Interiors",
+      id: "Luxury",
       title: "Luxury Wood Interiors",
       layout: "layout-2",
       description:
@@ -132,7 +132,11 @@ export function ServicesGallery() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="service-section-cta"
           >
-            <Link href="/contact" className="header-cta">
+            <Link
+              href="https://wa.me/917000832188"
+              target="_blank"
+              className="header-cta"
+            >
               Get Started
               <span className="arrow-circle">
                 <ArrowRight className="btn-arrow" size={14} />
