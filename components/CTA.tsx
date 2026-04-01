@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, Phone, Sparkles } from "lucide-react";
 import "./CTA.css";
+import Link from "next/link";
 
 export function CTA() {
   const features = [
@@ -39,15 +40,19 @@ export function CTA() {
           </p>
 
           <div className="cta-actions">
-            <button className="header-cta">
+            <Link
+              href="https://wa.me/917000832188"
+              target="_blank"
+              className="header-cta"
+            >
               Get Started
               <span className="arrow-circle">
                 <ArrowRight className="btn-arrow" size={14} />
               </span>
-            </button>
-            <button className="btn-view-services">
+            </Link>
+            <Link href="/services" className="btn-view-services">
               View More <ArrowRight size={18} />
-            </button>
+            </Link>
           </div>
 
           <div className="cta-features">
