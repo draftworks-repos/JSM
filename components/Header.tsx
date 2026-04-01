@@ -111,12 +111,16 @@ export function Header() {
               </nav>
 
               <div className="slider-footer">
-                <button className="header-cta w-full">
+                <Link
+                  href="https://wa.me/917000832188"
+                  target="_blank"
+                  className="header-cta w-full"
+                >
                   Get Started
                   <span className="arrow-circle">
                     <ArrowRight className="btn-arrow" size={14} />
                   </span>
-                </button>
+                </Link>
               </div>
             </motion.div>
           </motion.div>
