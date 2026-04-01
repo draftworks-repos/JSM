@@ -17,7 +17,7 @@ export function Portfolio() {
     },
     {
       id: 2,
-      title: "Contemporary Kitchen",
+      title: "Wooden Staircase",
       category: "Residential",
       image: "/portfolio-5.jpeg",
     },
@@ -29,13 +29,13 @@ export function Portfolio() {
     },
     {
       id: 4,
-      title: "Executive Office",
-      category: "Commercial",
+      title: "Wooden Separation Wall",
+      category: "Residential",
       image: "/portfolio-4.jpeg",
     },
     {
       id: 5,
-      title: "Elegant Bedroom",
+      title: "Elegant Tv Unit",
       category: "Residential",
       image: "/portfolio-2.jpg",
     },
