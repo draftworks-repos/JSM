@@ -95,7 +95,11 @@ export function WhyUs() {
               <h3 className="feature-title">
                 Explore the appearance <br /> of your residence
               </h3>
-              <Link href="/contact" className="header-cta">
+              <Link
+                href="https://wa.me/917000832188"
+                target="_blank"
+                className="header-cta"
+              >
                 Get Started
                 <span className="arrow-circle">
                   <ArrowRight className="btn-arrow" size={14} />
@@ -112,12 +116,10 @@ export function WhyUs() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <div className="floating-image-wrapper">
-              <video
-                src="/add/timer-add-1.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
+              <Image
+                src="/mandir-2.jpeg"
+                alt="Floating Image"
+                fill
                 className="floating-video"
                 data-lightbox
                 data-gallery="why-us"
