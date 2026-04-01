@@ -122,9 +122,9 @@ export function Footer() {
             © {currentYear} JANTA SAW MILL (JSM). All rights reserved.
           </p>
           <div className="legal-links">
-            <a href="#">Privacy Policy</a>
+            <Link href="/privacy-policy">Privacy Policy</Link>
             <span className="separator">•</span>
-            <a href="#">Terms of Service</a>
+            <Link href="/terms-conditions">Terms of Service</Link>
           </div>
         </div>
       </div>

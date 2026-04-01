@@ -175,6 +175,7 @@
 
 .footer .header-cta {
   margin-top: 1.5rem;
+  width: fit-content;
 }
 
 @media (max-width: 1024px) {
