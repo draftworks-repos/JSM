@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import "./Hero.css";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -49,12 +50,16 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
             className="hero-actions"
           >
-            <button className="btn-hero-primary">
+            <Link
+              href="https://wa.me/917000832188"
+              target="_blank"
+              className="btn-hero-primary"
+            >
               Request Consultation
               <span className="arrow-circle">
                 <ArrowRight className="btn-arrow" size={16} />
               </span>
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>
