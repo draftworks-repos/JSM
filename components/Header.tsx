@@ -46,12 +46,16 @@ export function Header() {
           </nav>
 
           <div className="header-actions desktop-only">
-            <button className="header-cta">
+            <Link
+              href="https://wa.me/917000832188"
+              target="_blank"
+              className="header-cta"
+            >
               Get Started
               <span className="arrow-circle">
                 <ArrowRight className="btn-arrow" size={14} />
               </span>
-            </button>
+            </Link>
           </div>
 
           <button
