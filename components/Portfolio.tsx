@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
-import { ArrowRight } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import Link from "next/link";
 import "./Portfolio.css";
 
@@ -81,11 +81,19 @@ export function Portfolio() {
             </motion.p>
           </div>
           <div className="header-right">
-            <Link href="/gallery" className="btn-view-all text">
+            <Link
+              href="https://wa.me/917000832188"
+              target="_blank"
+              className="btn-view-all text"
+            >
               View All Projects
             </Link>
-            <Link href="/gallery" className="btn-view-all">
-              <ArrowRight size={18} />
+            <Link
+              href="https://wa.me/917000832188"
+              target="_blank"
+              className="btn-view-all"
+            >
+              <MessageCircle size={18} />
             </Link>
           </div>
         </div>
