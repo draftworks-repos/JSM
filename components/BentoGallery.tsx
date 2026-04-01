@@ -16,12 +16,12 @@ export function BentoGallery() {
         "High-grade Sagwan and premium hardwood logs, selected for strength and durability in structural and fine woodworking.",
       Gallery: [
         "/work-1.jpeg",
-        "/work-18.jpg",
-        "/work-20.jpg",
-        "/work-19.jpg",
+        "/log-1.jpeg",
         "/work-13.jpeg",
-        "/work-12.jpeg",
         "/work-4.jpeg",
+        "/work-12.jpeg",
+        "/work-20.jpg",
+        "/work-18.jpg",
       ],
     },
     {
@@ -31,9 +31,9 @@ export function BentoGallery() {
       description:
         "Precision cutting and seasoning treatments to ensure stability and superior finish for high-end manufacturing.",
       Gallery: [
-        "/work-2.jpeg",
+        "/add/timer-add-1.mp4",
         "/work-8.jpeg",
-        "/work-15.jpeg",
+        "/add/timer-add-2.mp4",
         "/work-16.jpeg",
         "/work-10.jpeg",
         "/work-11.jpeg",
@@ -57,6 +57,11 @@ export function BentoGallery() {
       ],
     },
   ];
+
+  const isVideo = (src: string) =>
+    src.toLowerCase().endsWith(".mp4") ||
+    src.toLowerCase().endsWith(".webm") ||
+    src.toLowerCase().endsWith(".m4v");
 
   return (
     <section className="services-page-gallery bg-2">
@@ -96,15 +101,26 @@ export function BentoGallery() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
               >
-                <Image
-                  src={src}
-                  alt={`${section.title} Gallery Image ${idx + 1}`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  referrerPolicy="no-referrer"
-                  data-lightbox
-                  data-gallery={section.id}
-                />
+                {isVideo(src) ? (
+                  <video
+                    src={src}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="bento-video"
+                  />
+                ) : (
+                  <Image
+                    src={src}
+                    alt={`${section.title} Gallery Image ${idx + 1}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    referrerPolicy="no-referrer"
+                    data-lightbox
+                    data-gallery={section.id}
+                  />
+                )}
               </motion.div>
             ))}
           </div>
@@ -116,7 +132,11 @@ export function BentoGallery() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="service-section-cta"
           >
-            <Link href="/contact" className="header-cta">
+            <Link
+              href="https://wa.me/917000832188"
+              target="_blank"
+              className="header-cta"
+            >
               Get Started
               <span className="arrow-circle">
                 <ArrowRight className="btn-arrow" size={14} />
