@@ -10,6 +10,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import "./Footer.css";
+import Link from "next/link";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -23,15 +24,15 @@ export function Footer() {
   const quickLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Gallery", href: "/#gallery" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Contact Us", href: "/#contact" },
   ];
 
   const services = [
-    { name: "Bespoke Doors", href: "/#services" },
-    { name: "Luxury Interiors", href: "/#services" },
-    { name: "Mandirs & Sacred Spaces", href: "/#services" },
-    { name: "Premium Timber Supply", href: "/#services" },
+    { name: "Bespoke Doors", href: "/services/#Wooden" },
+    { name: "Luxury Interiors", href: "/services/#Luxury" },
+    { name: "Mandirs & Sacred Spaces", href: "/services/#Custom" },
+    { name: "Premium Timber Supply", href: "/services/#Premium" },
   ];
 
   return (
@@ -95,19 +96,23 @@ export function Footer() {
                 </li>
                 <li>
                   <Phone size={18} className="contact-icon" />
-                  <span>+91 98765 43210</span>
+                  <span>+91 7000 8321 88</span>
                 </li>
                 <li>
                   <Mail size={18} className="contact-icon" />
                   <span>info@jantasawmill.com</span>
                 </li>
               </ul>
-              <button className="footer header-cta">
+              <Link
+                href="https://wa.me/917000832188"
+                target="_blank"
+                className="footer header-cta"
+              >
                 Get a Quote
                 <span className="arrow-circle">
                   <ArrowRight className="btn-arrow" size={14} />
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
