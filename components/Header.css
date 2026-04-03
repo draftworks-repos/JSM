@@ -33,13 +33,25 @@
   z-index: 1;
 }
 
-.logo {
-  font-family: var(--font-display), sans-serif;
-  font-size: 28px;
-  font-weight: 900;
-  color: #fff;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+.slider-header .logo-img {
+  height: 60px;
 }
 
 .nav {
@@ -171,9 +183,7 @@
   margin-bottom: 60px;
 }
 
-.slider-header .logo {
-  color: #1a1a1a;
-}
+/* slider-header .logo-container is handled above if needed, but color is not applicable to img */
 
 .close-btn {
   background: none;
@@ -236,6 +246,14 @@
   .header-content {
     padding: 0 2rem;
   }
+
+  .logo-img {
+    height: 50px;
+  }
+
+  .slider-header .logo-img {
+    height: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -244,5 +262,12 @@
   }
   .header-content {
     padding: 0 1rem;
+  }
+  .logo-img {
+    height: 40px;
+  }
+
+  .slider-header .logo-img {
+    height: 40px;
   }
 }

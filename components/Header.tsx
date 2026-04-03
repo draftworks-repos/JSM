@@ -33,8 +33,8 @@ export function Header() {
       <header className="header">
         <div className="header-bg" />
         <div className="header-content">
-          <Link href="/" className="logo">
-            JSM
+          <Link href="/" className="logo-container">
+            <img src="/logo.png" alt="JSM Logo" className="logo-img" />
           </Link>
 
           <nav className="nav desktop-only">
@@ -86,7 +86,9 @@ export function Header() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="slider-header">
-                <div className="logo">JSM</div>
+                <Link href="/" className="logo-container" onClick={toggleMenu}>
+                  <img src="/logo.png" alt="JSM Logo" className="logo-img" />
+                </Link>
                 <button
                   className="close-btn"
                   onClick={toggleMenu}
