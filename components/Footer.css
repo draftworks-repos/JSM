@@ -19,12 +19,22 @@
   margin-bottom: 80px;
 }
 
-.footer-brand .logo {
-  font-family: var(--font-tight), sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #c4a484;
+.footer-logo-container {
+  display: block;
   margin-bottom: 24px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.footer-logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo-img:hover {
+  transform: scale(1.05);
 }
 
 .brand-desc {
@@ -187,6 +197,10 @@
   .footer .container {
     padding: 0 2rem;
   }
+
+  .footer-logo-img {
+    height: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -199,5 +213,9 @@
     flex-direction: column;
     gap: 20px;
     text-align: center;
+  }
+
+  .footer-logo-img {
+    height: 40px;
   }
 }

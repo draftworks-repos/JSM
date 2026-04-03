@@ -40,7 +40,9 @@ export function Footer() {
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <div className="logo">JSM</div>
+            <Link href="/" className="footer-logo-container">
+              <img src="/logo.png" alt="JSM Logo" className="footer-logo-img" />
+            </Link>
             <p className="brand-desc">
               JANTA SAW MILL (JSM) — By Majid Khan. Government of India
               Recognised timber merchants specializing in premium teakwood and
