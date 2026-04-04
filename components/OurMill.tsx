@@ -9,7 +9,7 @@ export function OurMill() {
     { src: "/work-13.jpeg", alt: "Timber Stacks" },
     { src: "/work-8.jpeg", alt: "Woodworking Machinery" },
     { src: "/work-9.jpeg", alt: "Wood Processing" },
-    { src: "/work-10.jpeg", alt: "Finished Planks" },
+    { src: "/planks.jpeg", alt: "Finished Planks" },
   ];
 
   return (
