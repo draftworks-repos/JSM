@@ -17,7 +17,7 @@ export function AboutHero() {
         >
           <h1 className="about-hero-title">
             Crafting Excellence <br />
-            <span className="accent">Since 1995.</span>
+            <span className="accent">Since 1975.</span>
           </h1>
           <p className="about-hero-subtitle">
             The story of JANTA SAW MILL (JSM) - where tradition meets modern
