@@ -16,7 +16,7 @@ export function ServicesGallery() {
         "High-quality, seasoned Sagwan (Teak) wood sourced for durability and rich grain, perfect for high-end construction and bespoke carpentry.",
       Gallery: [
         "/work-1.jpeg",
-        "/work-15.jpeg",
+        "/add/timer-add-3.mp4",
         "/work-9.jpeg",
         "/work-4.jpeg",
         "/work-11.jpeg",
@@ -42,10 +42,10 @@ export function ServicesGallery() {
     },
     {
       id: "Wooden",
-      title: "Wooden Doors",
+      title: "Teakwood Doors",
       layout: "layout-1",
       description:
-        "Statement wooden doors handcrafted from premium teak, sagon, and hardwoods designed to elevate luxury residences and heritage estates.",
+        "Statement Teakwood doors handcrafted from premium teak, sagon, and hardwoods designed to elevate luxury residences and heritage estates.",
       Gallery: [
         "/door-1.png",
         "/door-4.jpeg",
@@ -73,6 +73,11 @@ export function ServicesGallery() {
       ],
     },
   ];
+
+  const isVideo = (src: string) =>
+    src.toLowerCase().endsWith(".mp4") ||
+    src.toLowerCase().endsWith(".webm") ||
+    src.toLowerCase().endsWith(".m4v");
 
   return (
     <section className="services-page-gallery bg-2">
@@ -112,15 +117,26 @@ export function ServicesGallery() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
               >
-                <Image
-                  src={src}
-                  alt={`${section.title} Gallery Image ${idx + 1}`}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  referrerPolicy="no-referrer"
-                  data-lightbox
-                  data-gallery={section.id}
-                />
+                {isVideo(src) ? (
+                  <video
+                    src={src}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="bento-video"
+                  />
+                ) : (
+                  <Image
+                    src={src}
+                    alt={`${section.title} Gallery Image ${idx + 1}`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    referrerPolicy="no-referrer"
+                    data-lightbox
+                    data-gallery={section.id}
+                  />
+                )}
               </motion.div>
             ))}
           </div>
