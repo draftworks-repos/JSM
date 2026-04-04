@@ -29,7 +29,7 @@ export function Footer() {
   ];
 
   const services = [
-    { name: "Bespoke Doors", href: "/services/#Wooden" },
+    { name: "Teakwood Doors", href: "/services/#Wooden" },
     { name: "Luxury Interiors", href: "/services/#Luxury" },
     { name: "Mandirs & Sacred Spaces", href: "/services/#Custom" },
     { name: "Premium Timber Supply", href: "/services/#Premium" },
@@ -102,7 +102,9 @@ export function Footer() {
                 </li>
                 <li>
                   <Mail size={18} className="contact-icon" />
-                  <span>info@jantasawmill.com</span>
+                  <a href="mailto:jantasawmilljsm@gmail.com">
+                    jantasawmilljsm@gmail.com
+                  </a>
                 </li>
               </ul>
               <Link
