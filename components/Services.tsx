@@ -19,11 +19,11 @@ export function Services() {
     },
     {
       id: "B",
-      title: "Wooden Doors",
+      title: "Teakwood Doors",
       href: "/services#Bespoke",
       category: "Craftsmanship",
       description:
-        "Statement wooden doors handcrafted from premium teak, sagon, and hardwoods designed to elevate luxury residences and heritage estates.",
+        "Statement Teakwood doors handcrafted from premium teak, sagon, and hardwoods designed to elevate luxury residences and heritage estates.",
       image: "/door-4.jpeg",
     },
     {
