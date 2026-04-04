@@ -78,7 +78,7 @@ export function Header() {
             onClick={toggleMenu}
           >
             <motion.div
-              className="mobile-slider"
+              className="mobile-slider  bg-2"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
