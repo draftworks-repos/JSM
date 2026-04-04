@@ -64,7 +64,7 @@ export function AboutContent() {
                 Our facility combines traditional woodworking wisdom with
                 state-of-the-art technology to deliver products that are not
                 just furniture, but legacies. We specialize in the finest
-                Teakwood and Sagon, ensuring that every door, wardrobe, and
+                Teakwood (SAGWAN), ensuring that every door, wardrobe, and
                 interior element we craft stands the test of time.
               </p>
             </div>
