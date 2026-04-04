@@ -49,9 +49,10 @@ export function FounderStory() {
             <div className="story-text">
               <p>
                 Founded by Mr. Majid Khan, Janta Saw Mill (JSM) began its
-                journey more than 40 years ago with a simple yet powerful vision
-                — to bring the finest quality teakwood to homes, craftsmen, and
-                builders who believe that true quality never fades with time.
+                journey more than 40 years ago in 1975 with a simple yet
+                powerful vision — to bring the finest quality teakwood to homes,
+                craftsmen, and builders who believe that true quality never
+                fades with time.
               </p>
               <p>
                 Majid Khan began with the trading of premium raw teakwood,
