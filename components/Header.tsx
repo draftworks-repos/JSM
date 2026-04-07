@@ -51,7 +51,7 @@ export function Header() {
               target="_blank"
               className="header-cta"
             >
-              Get Started
+              Enquire Now
               <span className="arrow-circle">
                 <ArrowRight className="btn-arrow" size={14} />
               </span>
