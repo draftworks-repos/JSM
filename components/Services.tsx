@@ -48,6 +48,14 @@ export function Services() {
 
   return (
     <section className="services-section">
+      <Image
+        src="/bg/bg-6.webp"
+        alt="Background"
+        fill
+        priority
+        className="services-bg-image"
+        quality={100}
+      />
       <div className="container">
         <div className="services-header">
           <div className="header-left">
