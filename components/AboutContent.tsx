@@ -20,7 +20,7 @@ export function AboutContent() {
     {
       icon: <Award size={24} />,
       title: "40+ Years",
-      desc: "Three decades of mastery in timber and woodworking.",
+      desc: "Three decades of mastery in timber and wood working.",
     },
     {
       icon: <Star size={24} />,
@@ -56,12 +56,12 @@ export function AboutContent() {
               <p>
                 Founded on the principles of integrity and unparalleled
                 craftsmanship, JANTA SAW MILL (JSM) has evolved into a
-                cornerstone of luxury architectural woodwork in Central India.
+                cornerstone of luxury architectural wood work in Central India.
                 Under the stewardship of Majid Khan, we have spent over 40 years
                 perfecting the art of timber selection and precision execution.
               </p>
               <p>
-                Our facility combines traditional woodworking wisdom with
+                Our facility combines traditional wood working wisdom with
                 state-of-the-art technology to deliver products that are not
                 just furniture, but legacies. We specialize in the finest
                 Teakwood (SAGWAN), ensuring that every door, wardrobe, and
