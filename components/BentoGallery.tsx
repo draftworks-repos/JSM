@@ -35,7 +35,7 @@ export function BentoGallery() {
         "/work-8.jpeg",
         "/add/timer-add-2.mp4",
         "/work-16.jpeg",
-        "/work-10.jpeg",
+        "/work-15.jpeg",
         "/work-11.jpeg",
         "/work-3.jpeg",
       ],
