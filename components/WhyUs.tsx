@@ -96,7 +96,7 @@ export function WhyUs() {
                 Explore the appearance <br /> of your residence
               </h3>
               <Link
-                href="https://wa.me/917000832188"
+                href="https://wa.me/918349129777"
                 target="_blank"
                 className="header-cta"
               >
