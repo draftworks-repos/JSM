@@ -162,6 +162,8 @@ export function Gallery() {
                     loop
                     playsInline
                     className="gallery-video"
+                    data-lightbox
+                    data-gallery="portfolio-main"
                   />
                 ) : (
                   <Image
@@ -172,6 +174,7 @@ export function Gallery() {
                     className="gallery-img"
                     referrerPolicy="no-referrer"
                     data-lightbox
+                    data-gallery="portfolio-main"
                   />
                 )}
               </div>
