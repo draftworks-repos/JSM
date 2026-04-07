@@ -48,8 +48,9 @@ export function Services() {
 
   return (
     <section className="services-section">
+      <div className="overlay"></div>
       <Image
-        src="/bg/bg-6.webp"
+        src="/bg/bg-10.jpeg"
         alt="Background"
         fill
         priority

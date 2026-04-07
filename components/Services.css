@@ -2,6 +2,14 @@
   position: relative;
   padding: 150px 0 100px;
   overflow: hidden;
+  background-image: url("/bg/bg-11.jpeg");
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: rgba(57, 21, 2, 0.4); /* adjust opacity */
 }
 
 .services-bg-image {
@@ -9,12 +17,15 @@
   background-position: center;
   z-index: -1;
   pointer-events: none;
+  opacity: 0;
 }
 
 .services-section .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 60px;
+  position: relative;
+  z-index: 2;
 }
 
 .services-header {
@@ -22,6 +33,7 @@
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 60px;
+  z-index: 1;
 }
 
 .header-left .badge {
@@ -71,6 +83,9 @@
   overflow: hidden;
   background-color: transparent;
   height: 600px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1;
 }
 
 .service-image-wrapper {
@@ -86,8 +101,13 @@
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+}
+
 .service-card:hover .service-img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 .service-overlay {

@@ -49,6 +49,7 @@ export function Portfolio() {
 
   return (
     <section className="portfolio">
+      <div className="overlay"></div>
       <div className="container">
         <div className="portfolio-header">
           <div className="header-left">
