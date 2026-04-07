@@ -7,6 +7,7 @@ import {
   Mail,
   MapPin,
   Phone,
+  MessageCircle,
   ArrowRight,
 } from "lucide-react";
 import "./Footer.css";
@@ -107,7 +108,7 @@ export function Footer() {
                     href="https://wa.me/918349129777"
                     className="footer-number"
                   >
-                    <Phone size={18} className="contact-icon" />
+                    <MessageCircle size={18} className="contact-icon" />
                     <span>+91 8349 1297 77</span>
                   </a>
                 </li>
