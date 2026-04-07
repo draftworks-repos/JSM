@@ -13,6 +13,7 @@ export default function Lightbox() {
   const isVideo = (src: string) =>
     src.toLowerCase().endsWith(".mp4") ||
     src.toLowerCase().endsWith(".webm") ||
+    src.toLowerCase().endsWith(".m4v") ||
     src.toLowerCase().endsWith(".ogg");
 
   const close = useCallback(() => setOpen(false), []);
@@ -105,6 +106,9 @@ export default function Lightbox() {
               className="lightbox-video"
               controls
               autoPlay
+              muted
+              loop
+              playsInline
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
