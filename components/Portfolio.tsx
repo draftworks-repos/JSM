@@ -81,15 +81,11 @@ export function Portfolio() {
             </motion.p>
           </div>
           <div className="header-right">
-            <Link
-              href="https://wa.me/917000832188"
-              target="_blank"
-              className="btn-view-all text"
-            >
+            <Link href="/gallery" className="btn-view-all text">
               View All Projects
             </Link>
             <Link
-              href="https://wa.me/917000832188"
+              href="https://wa.me/918349129777"
               target="_blank"
               className="btn-view-all"
             >
