@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import "./ServicesGallery.css";
 
 export function ServicesGallery() {
@@ -141,6 +141,8 @@ export function ServicesGallery() {
                     loop
                     playsInline
                     className="bento-video"
+                    data-lightbox
+                    data-gallery={section.id}
                   />
                 ) : (
                   <Image
@@ -172,6 +174,16 @@ export function ServicesGallery() {
               Get Started
               <span className="arrow-circle">
                 <ArrowRight className="btn-arrow" size={14} />
+              </span>
+            </Link>
+            <Link
+              href="tel:7000832188"
+              target="_blank"
+              className="header-cta call-now"
+            >
+              Call Now
+              <span className="arrow-circle call-now">
+                <Phone className="btn-arrow call-now" size={14} />
               </span>
             </Link>
           </motion.div>
