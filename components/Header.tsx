@@ -47,7 +47,7 @@ export function Header() {
 
           <div className="header-actions desktop-only">
             <Link
-              href="https://wa.me/917000832188"
+              href="https://wa.me/918349129777"
               target="_blank"
               className="header-cta"
             >
@@ -114,7 +114,7 @@ export function Header() {
 
               <div className="slider-footer">
                 <Link
-                  href="https://wa.me/917000832188"
+                  href="https://wa.me/918349129777"
                   target="_blank"
                   className="header-cta w-full"
                 >
