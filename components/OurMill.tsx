@@ -7,7 +7,7 @@ import "./OurMill.css";
 export function OurMill() {
   const images = [
     { src: "/work-13.jpeg", alt: "Timber Stacks" },
-    { src: "/work-8.jpeg", alt: "Woodworking Machinery" },
+    { src: "/work-8.jpeg", alt: "Wood working Machinery" },
     { src: "/work-9.jpeg", alt: "Wood Processing" },
     { src: "/planks.jpeg", alt: "Finished Planks" },
   ];
@@ -29,7 +29,7 @@ export function OurMill() {
               Craftsmanship Meets <span className="accent">Technology</span>
             </h2>
             <p className="mill-desc">
-              Our facility combines traditional woodworking wisdom with
+              Our facility combines traditional wood working wisdom with
               state-of-the-art precision technology. At JSM, every piece of
               timber is treated with the respect it deserves, ensuring that the
               natural character of the wood is preserved while achieving the
