@@ -5,6 +5,7 @@ import { Services } from "@/components/Services";
 import { WhyUs } from "@/components/WhyUs";
 import { Portfolio } from "@/components/Portfolio";
 import { GallerySlider } from "@/components/GallerySlider";
+import { OurMill } from "@/components/OurMill";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <div className="bg-1">
         <LegacyStrip />
+        <OurMill />
         <WhyUs />
       </div>
       <Services />
