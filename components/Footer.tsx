@@ -97,18 +97,32 @@ export function Footer() {
                   <span>Madhya Pradesh, India</span>
                 </li>
                 <li>
-                  <Phone size={18} className="contact-icon" />
-                  <span>+91 7000 8321 88</span>
+                  <a
+                    href="https://wa.me/917000832188"
+                    className="footer-number"
+                  >
+                    <Phone size={18} className="contact-icon" />
+                    <span>+91 7000 8321 88</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/918349129777"
+                    className="footer-number"
+                  >
+                    <Phone size={18} className="contact-icon" />
+                    <span>+91 8349 1297 77</span>
+                  </a>
                 </li>
                 <li>
                   <Mail size={18} className="contact-icon" />
-                  <a href="mailto:jantasawmilljsm@gmail.com">
-                    jantasawmilljsm@gmail.com
+                  <a href="mailto:contact@jantasawmill.in">
+                    contact@jantasawmill.in
                   </a>
                 </li>
               </ul>
               <Link
-                href="https://wa.me/917000832188"
+                href="https://wa.me/918349129777"
                 target="_blank"
                 className="footer header-cta"
               >
