@@ -46,7 +46,7 @@ export function Footer() {
             <p className="brand-desc">
               JANTA SAW MILL (JSM) — By Majid Khan. Government of India
               Recognised timber merchants specializing in premium teakwood and
-              luxury architectural woodwork.
+              luxury architectural wood work.
             </p>
             <div className="social-links">
               {socialLinks.map((social, index) => (
