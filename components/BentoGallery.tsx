@@ -133,7 +133,7 @@ export function BentoGallery() {
             className="service-section-cta"
           >
             <Link
-              href="https://wa.me/917000832188"
+              href="https://wa.me/918349129777"
               target="_blank"
               className="header-cta"
             >
