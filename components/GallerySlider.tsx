@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import "./GallerySlider.css";
 
@@ -43,6 +43,14 @@ export function GallerySlider() {
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % projects.length);
   };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSlide();
+    }, 3000);
+
+    return () => clearInterval(timer);
+  }, [projects.length]); // Slide duration as 1 second
 
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev - 1 + projects.length) % projects.length);
@@ -99,7 +107,7 @@ export function GallerySlider() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
               className="gallery-slide"
             >
               <div className="gallery-image-container">
@@ -110,6 +118,8 @@ export function GallerySlider() {
                   className="gallery-img"
                   referrerPolicy="no-referrer"
                   priority
+                  data-lightbox
+                  data-gallery="featured-slider"
                 />
                 <div className="gallery-overlay">
                   <span className="project-category">Featured Project</span>
