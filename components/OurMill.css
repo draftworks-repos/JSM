@@ -137,12 +137,13 @@
 }
 
 .mill-footer .header-cta {
-  background-color: #c4a484;
-  color: #fff;
+  background-color: transparent;
+  color: #000;
   text-transform: capitalize;
   height: 50px;
   padding: 8px 8px 8px 24px;
   border-radius: 50px;
+  border: 1px solid #0000007c;
   font-size: 14px;
   font-weight: 500;
   display: flex;
@@ -157,7 +158,7 @@
   width: 34px;
   height: 34px;
   background-color: #fff;
-  color: #c4a484;
+  color: #000;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -167,7 +168,6 @@
 
 .mill-footer .header-cta:hover {
   transform: scale(1.1);
-  background-color: #b39374;
 }
 
 .mill-footer .header-cta:hover .btn-arrow {
