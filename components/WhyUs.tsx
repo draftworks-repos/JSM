@@ -85,7 +85,7 @@ export function WhyUs() {
             className="feature-image-wrapper"
           >
             <Image
-              src="/hero.webp"
+              src="/contact/bg.jpg"
               alt="Feature Interior"
               fill
               className="feature-image"
