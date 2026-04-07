@@ -13,7 +13,7 @@ export function BentoGallery() {
       title: "Raw Timber",
       layout: "layout-1",
       description:
-        "High-grade Sagwan and premium hardwood logs, selected for strength and durability in structural and fine woodworking.",
+        "High-grade Sagwan and premium hardwood logs, selected for strength and durability in structural and fine wood working.",
       Gallery: [
         "/work-1.jpeg",
         "/log-1.jpeg",
