@@ -41,6 +41,22 @@ export function ServicesGallery() {
       ],
     },
     {
+      id: "Windows",
+      title: "Teakwood Windows",
+      layout: "layout-2",
+      description:
+        "Custom-crafted Teakwood windows designed for architectural elegance, superior insulation, and lifelong durability.",
+      Gallery: [
+        "/window-1.jpeg",
+        "/add/timer-add-4.mp4",
+        "/window-5.jpeg",
+        "/window-3.jpeg",
+        "/window-6.jpeg",
+        "/window-4.jpeg",
+        "/window-2.jpeg",
+      ],
+    },
+    {
       id: "Wooden",
       title: "Teakwood Doors",
       layout: "layout-1",
@@ -149,7 +165,7 @@ export function ServicesGallery() {
             className="service-section-cta"
           >
             <Link
-              href="https://wa.me/917000832188"
+              href="https://wa.me/918349129777"
               target="_blank"
               className="header-cta"
             >
