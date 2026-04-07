@@ -1,15 +1,20 @@
 "use client";
 
 import { motion } from "motion/react";
-import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { ArrowRight } from "lucide-react";
 import "./OurMill.css";
 
 export function OurMill() {
-  const images = [
-    { src: "/work-13.jpeg", alt: "Timber Stacks" },
-    { src: "/work-8.jpeg", alt: "Wood working Machinery" },
-    { src: "/work-9.jpeg", alt: "Wood Processing" },
-    { src: "/planks.jpeg", alt: "Finished Planks" },
+  const pathname = usePathname();
+  const isAboutPage = pathname === "/about";
+
+  const media = [
+    { src: "/add/1.mp4", alt: "Raw Timber Logs" },
+    { src: "/add/2.mp4", alt: "Wood working Machinery" },
+    { src: "/add/3.mp4", alt: "Log Processing" },
+    { src: "/add/4.mp4", alt: "Premium Teak Stock" },
   ];
 
   return (
@@ -39,7 +44,7 @@ export function OurMill() {
         </div>
 
         <div className="mill-gallery">
-          {images.map((img, index) => (
+          {media.map((item, index) => (
             <motion.div
               key={index}
               className="gallery-item"
@@ -49,16 +54,18 @@ export function OurMill() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <div className="gallery-img-wrapper">
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
+                <video
+                  src={item.src}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   className="mill-img"
-                  referrerPolicy="no-referrer"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
                   data-lightbox
                   data-gallery="mill"
                 />
-                <div className="img-caption">{img.alt}</div>
+                <div className="img-caption">{item.alt}</div>
               </div>
             </motion.div>
           ))}
@@ -78,6 +85,20 @@ export function OurMill() {
             <span className="stat-label">Machinery & Tools</span>
           </div>
         </div>
+
+        {!isAboutPage && (
+          <motion.div
+            className="mill-footer"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <Link href="/about" className="btn-mill-about">
+              Discover Our Story <ArrowRight size={18} />
+            </Link>
+          </motion.div>
+        )}
       </div>
     </section>
   );

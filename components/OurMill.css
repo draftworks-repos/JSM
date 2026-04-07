@@ -138,6 +138,43 @@
   font-weight: 600;
 }
 
+.mill-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.btn-mill-about {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #fff;
+  color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-mill-about:hover {
+  color: #fff;
+  border-color: #c4a484;
+  background-color: #c4a484;
+  box-shadow: 0 10px 20px rgba(196, 164, 132, 0.2);
+}
+
+.btn-mill-about svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-mill-about:hover svg {
+  transform: translateX(5px);
+}
+
 @media (max-width: 992px) {
   .mill-gallery {
     grid-template-columns: repeat(2, 1fr);
