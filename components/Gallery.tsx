@@ -9,6 +9,13 @@ import "./Gallery.css";
 const INITIAL_IMAGES_COUNT = 9;
 
 const ALL_IMAGES = [
+  { id: "w1", src: "/window-1.jpeg" },
+  { id: "w2", src: "/add/timer-add-4.mp4" },
+  { id: "w3", src: "/window-2.jpeg" },
+  { id: "w4", src: "/window-3.jpeg" },
+  { id: "w5", src: "/window-4.jpeg" },
+  { id: "w6", src: "/window-5.jpeg" },
+  { id: "w7", src: "/window-6.jpeg" },
   { id: 1, src: "/door-6.jpeg" },
   { id: 2, src: "/stairs-3.jpeg" },
   { id: 3, src: "/gallery-1.jpeg" },
@@ -96,6 +103,11 @@ export function Gallery() {
     setVisibleCount((prev) => Math.min(prev + 6, ALL_IMAGES.length));
   };
 
+  const isVideo = (src: string) =>
+    src.toLowerCase().endsWith(".mp4") ||
+    src.toLowerCase().endsWith(".webm") ||
+    src.toLowerCase().endsWith(".m4v");
+
   const visibleImages = ALL_IMAGES.slice(0, visibleCount);
   const hasMore = visibleCount < ALL_IMAGES.length;
 
@@ -142,15 +154,26 @@ export function Gallery() {
               transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
             >
               <div className={`gallery-img-wrapper`}>
-                <Image
-                  src={img.src}
-                  alt={`Gallery Image ${img.id}`}
-                  width={800}
-                  height={1200}
-                  className="gallery-img"
-                  referrerPolicy="no-referrer"
-                  data-lightbox
-                />
+                {isVideo(img.src) ? (
+                  <video
+                    src={img.src}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="gallery-video"
+                  />
+                ) : (
+                  <Image
+                    src={img.src}
+                    alt={`Gallery Image ${img.id}`}
+                    width={800}
+                    height={1200}
+                    className="gallery-img"
+                    referrerPolicy="no-referrer"
+                    data-lightbox
+                  />
+                )}
               </div>
             </motion.div>
           ))}
