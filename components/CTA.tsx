@@ -45,13 +45,13 @@ export function CTA() {
               target="_blank"
               className="header-cta"
             >
-              Get Started
+              Enquire Now
               <span className="arrow-circle">
                 <ArrowRight className="btn-arrow" size={14} />
               </span>
             </Link>
-            <Link href="/services" className="btn-view-services">
-              View More <ArrowRight size={18} />
+            <Link href="/services" className="btn-view-services call-now">
+              Call Now <Phone size={18} />
             </Link>
           </div>
 

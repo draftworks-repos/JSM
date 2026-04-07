@@ -130,6 +130,12 @@
   font-weight: 400;
 }
 
+.btn-view-services.call-now:hover {
+  color: #000;
+  background-color: white;
+  border: 1px solid #000;
+}
+
 .cta-features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -175,7 +181,7 @@
   font-family: var(--font-tight), sans-serif;
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 600;
-  color: #c4a484;
+  color: #84492b;
   line-height: 1;
 }
 
