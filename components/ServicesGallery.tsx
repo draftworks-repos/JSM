@@ -169,7 +169,7 @@ export function ServicesGallery() {
             <Link
               href="https://wa.me/918349129777"
               target="_blank"
-              className="header-cta"
+              className="services-header-cta"
             >
               Get Started
               <span className="arrow-circle">
@@ -179,7 +179,7 @@ export function ServicesGallery() {
             <Link
               href="tel:7000832188"
               target="_blank"
-              className="header-cta call-now"
+              className="services-header-cta call-now"
             >
               Call Now
               <span className="arrow-circle call-now">

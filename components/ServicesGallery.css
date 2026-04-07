@@ -63,7 +63,7 @@
     box-shadow 0.3s ease;
 }
 
-.header-cta.call-now {
+.services-header-cta.call-now {
   background: #fff;
   border: none;
   color: #000;
@@ -82,7 +82,7 @@
   text-decoration: none;
   width: fit-content;
 }
-.header-cta {
+.services-header-cta {
   background: #c4a484;
   border: none;
   color: #fff;
@@ -102,7 +102,7 @@
   width: fit-content;
 }
 
-.header-cta .arrow-circle {
+.services-header-cta .arrow-circle {
   width: 32px;
   height: 32px;
   background-color: #fff;
@@ -113,27 +113,27 @@
   color: #c4a484;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.header-cta.call-now .arrow-circle {
+.services-header-cta.call-now .arrow-circle {
   background-color: #000;
   color: #fff;
 }
 
-.header-cta:hover .arrow-circle {
+.services-header-cta:hover .arrow-circle {
   background-color: #fff;
   color: #c4a484;
 }
 
-.header-cta:hover {
+.services-header-cta:hover {
   transform: scale(1.075);
 }
 
-.header-cta .btn-arrow {
+.services-header-cta .btn-arrow {
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   transform-origin: center;
 }
 
-.header-cta:hover .btn-arrow {
-  transform: rotate(-45deg);
+.services-header-cta:hover .btn-arrow {
+  transform: rotate(-15deg);
 }
 
 .bento-item img {
