@@ -97,10 +97,7 @@ export function Footer() {
                   <span>Madhya Pradesh, India</span>
                 </li>
                 <li>
-                  <a
-                    href="https://wa.me/917000832188"
-                    className="footer-number"
-                  >
+                  <a href="tel:+917000832188" className="footer-number">
                     <Phone size={18} className="contact-icon" />
                     <span>+91 7000 8321 88</span>
                   </a>
