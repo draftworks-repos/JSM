@@ -94,8 +94,11 @@ export function OurMill() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <Link href="/about" className="btn-mill-about">
-              Discover Our Story <ArrowRight size={18} />
+            <Link href="/about" className="header-cta">
+              Discover Our Story
+              <span className="arrow-circle">
+                <ArrowRight className="btn-arrow" size={14} />
+              </span>
             </Link>
           </motion.div>
         )}

@@ -63,7 +63,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .gallery-item {
@@ -100,14 +100,6 @@
   color: #fff;
   font-size: 0.9rem;
   font-weight: 500;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-}
-
-.gallery-item:hover .img-caption {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .mill-stats-grid {
@@ -141,38 +133,45 @@
 .mill-footer {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
-.btn-mill-about {
+.mill-footer .header-cta {
+  background-color: #c4a484;
+  color: #fff;
+  text-transform: capitalize;
+  height: 50px;
+  padding: 8px 8px 8px 24px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 12px;
-  background-color: #fff;
-  color: #1a1a1a;
-  border: 1px solid #1a1a1a;
-  padding: 16px 32px;
-  border-radius: 50px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   text-decoration: none;
-}
-
-.btn-mill-about:hover {
-  color: #fff;
-  border-color: #c4a484;
-  background-color: #c4a484;
   box-shadow: 0 10px 20px rgba(196, 164, 132, 0.2);
 }
 
-.btn-mill-about svg {
-  transition: transform 0.3s ease-in-out;
+.mill-footer .header-cta .arrow-circle {
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  color: #c4a484;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.btn-mill-about:hover svg {
-  transform: translateX(5px);
+.mill-footer .header-cta:hover {
+  transform: scale(1.1);
+  background-color: #b39374;
+}
+
+.mill-footer .header-cta:hover .btn-arrow {
+  transform: rotate(-45deg);
 }
 
 @media (max-width: 992px) {
